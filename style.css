@@ -1,0 +1,33 @@
+h1
+{
+    background-color: beige;
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+nav
+{
+    align-content: center;
+
+}
+
+.box-left
+{
+    background-color: whitesmoke;
+    margin-right: 20%;
+    padding: 50px;
+    border:1pt;
+}
+.box-right
+{
+    background-color: whitesmoke;
+    margin-left: 20%;
+    padding: 50px;
+    border-left:5px solid blue;
+    border-bottom: 5px solid blue;
+    border-top: 5px solid red;
+    border-bottom-left-radius:5px;
+    border-top-left-radius:5px;
+}
