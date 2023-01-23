@@ -13,21 +13,34 @@ nav
 
 }
 
+@keyframes leftSlide {
+    0% {
+        opacity: 0;
+        transform: translateX(-250px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+
+    }
+}
 .box-left
 {
     background-color: whitesmoke;
     margin-right: 20%;
+    margin-top: 50px;
+    margin-bottom: 50px;
     padding: 50px;
     border:1pt;
+    animation: leftSlide 1s ease 0s 1 normal forwards;
 }
 .box-right
 {
     background-color: whitesmoke;
     margin-left: 20%;
     padding: 50px;
-    border-left:5px solid blue;
-    border-bottom: 5px solid blue;
-    border-top: 5px solid red;
     border-bottom-left-radius:5px;
     border-top-left-radius:5px;
 }
+
