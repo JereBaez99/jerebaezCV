@@ -4,13 +4,10 @@ h1
     padding: 10px 10px 10px 10px;
     display: flex;
     justify-content: center;
-
 }
-
-nav
+.border-nav
 {
-    align-content: center;
-
+    padding: 10px;
 }
 
 @keyframes leftSlide {
