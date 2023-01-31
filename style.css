@@ -1,50 +1,157 @@
-h1
-{
-    background-color: beige;
-    padding: 10px 10px 10px 10px;
-    display: flex;
-    justify-content: center;
+/* var 1c75bc::after */
+
+.container-body {
+  justify-content: space-around;
+  display: block;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
 }
-.nav-border
-{
-    padding: 10px;
+.wrapper {
+  background-color: black;
+}
+h1 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 150px;
+  margin: auto;
 }
 
-.main_icon
-{
-    width: 80px;
-    height: 80px;
+h2 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 50px;
+  margin: auto;
+}
 
+h3 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 50px;
+}
+
+.info_card {
+  font-family: "IBM Plex Mono", monospace;
+  margin: auto;
+}
+
+.main_profile {
+  margin: auto;
+}
+
+/* stilo de los ladrillos con los elementos de las aptitudes */
+.brick {
+  font-family: "IBM Plex Mono", monospace;
+  background-color: rgb(250, 247, 242);
+  justify-content: start;
+  margin: auto;
+  text-align: center;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: black;
+  border-width: 5px;
+  margin: 5px;
+}
+
+.col-contour {
+  padding: 0px;
+}
+
+/* Estilos para las tarjetas de formacion */
+.progress-card-title {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: larger;
+  color: white;
+  padding: 0px;
+  margin: 0px;
+}
+
+.progress-card {
+  background-color: black;
+  border-style: solid;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.card-style {
+
+}
+
+/* offset de la tarjeta con informacion personal */
+@media (min-width: 768px) {
+  .off-set {
+    margin-top: -80px;
+  }
+}
+.shadow {
+  border-radius: 20px;
+  box-shadow: 6px 6px 20px 1px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 6px 6px 20px 1px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 6px 6px 20px 1px rgba(0, 0, 0, 0.6);
+}
+
+.back_ground_main_profile {
+  background-image: url(imagenes/SVG/back_ground_main_profile.svg);
+  background-color: white;
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-attachment:fixed; */
+}
+
+.main_icon {
+  width: 50px;
+  height: 50px;
+}
+
+.collapse_icon {
+  width: 50px;
+  height: 50px;
 }
 
 @keyframes leftSlide {
-    0% {
-        opacity: 0;
-        transform: translateX(-250px);
-    }
-    
-    100% {
-        opacity: 1;
-        transform: translateX(0);
+  0% {
+    opacity: 0;
+    transform: translateX(-250px);
+  }
 
-    }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
-.box-left
-{
-    background-color: whitesmoke;
-    margin-right: 20%;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding: 50px;
-    border:1pt;
-    animation: leftSlide 1s ease 0s 1 normal forwards;
-}
-.box-right
-{
-    background-color: whitesmoke;
-    margin-left: 20%;
-    padding: 50px;
-    border-bottom-left-radius:5px;
-    border-top-left-radius:5px;
+.box-left {
+  background-color: whitesmoke;
+  margin-right: 20%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 50px;
+  animation: leftSlide 1s ease 0s 1 normal forwards;
+  box-shadow: 6px 6px 25px 0px rgba(0, 0, 0, 0.6) inset;
+  -webkit-box-shadow: 6px 6px 25px 0px rgba(0, 0, 0, 0.6) inset;
+  -moz-box-shadow: 6px 6px 25px 0px rgba(0, 0, 0, 0.6) inset;
 }
 
+@keyframes rightSlide {
+  0% {
+    opacity: 0;
+    transform: translateX(250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.box-right {
+  background-color: whitesmoke;
+  margin-left: 20%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 50px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  animation: rightSlide 1s ease 0s 1 normal forwards;
+
+  box-shadow: 6px 6px 25px 0px rgba(0, 0, 0, 0.6) inset;
+  -webkit-box-shadow: 6px 6px 25px 0px rgba(0, 0, 0, 0.6) inset;
+  -moz-box-shadow: 6px 6px 25px 0px rgba(0, 0, 0, 0.6) inset;
+}
