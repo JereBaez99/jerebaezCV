@@ -17,7 +17,7 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="/css/style.css" type="text/css" />
     <title>CV-JB</title>
   </head>
 
@@ -70,20 +70,33 @@
           </div>
         </div>
       </nav>
-
       <!-- ENCABEZADO -->
       <div class="wrapper">
-        <header>
-          <div class="container-fluid">
+        <header class="header-class">
+          <div class="container-fluid header-class">
             <div class="row back_ground_main_profile">
-              <div class="col-sm-12 col-md-6 text-center">
-                <h1>Hola! <br />Soy Jere.</h1>
-                <h3>Front end Developer</h3>
+              <div class="col-sm-12 col-md-6">
+                <div class="title-profile-container">
+                  <h1 class="main-title-header">Hola! <br />Soy Jere.</h1>
+                </div>
+                <div class="profile-animation-list-container">
+                  <ul class="profile-animation-list" id="profile_animation">
+                    <li >
+                      <h3 class="profile-animation-item">Front end Developer</h3>
+                    </li>
+                    <li>
+                      <h3 class="profile-animation-item">Designer</h3>
+                    </li>
+                    <li>
+                      <h3 class="profile-animation-item">Programer</h3>
+                    </li>
+                  </ul>
+                </div>
               </div>
               <div class="col-sm-12 col-md-6 text-center">
                 <img
                   class="img-fluid"
-                  src="imagenes/SVG/new_face.png"
+                  src="imagenes/SVG/face-sketch.svg"
                   alt="JeremiasBaez_profile"
                 />
               </div>
@@ -91,15 +104,18 @@
           </div>
         </header>
         <!-- DATOS PERSONALES -->
-        <section class="Section-class" id="informacion-personal">
-          <div class="box-left">
+        <section class="Section-class" >
+          <div class="box-left" id="box-left-1">
             <div class="row justify-content-end">
-              <div class="col-sm-12 col-md-6 d-flex align-content-center">
-                <h2>Datos <br />Personales</h2>
+              <div class="col-sm-12 col-md-6 d-flex box-left-title-wrapper">
+                <h2 class="box-left-title">Datos <br />Personales</h2>
               </div>
               <div class="col-sm-12 col-md-6 text-start">
                 <div class="off-set shadow">
                   <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                      <p class="info_card">Nombre: Jeremias Baez.</p>
+                    </li>
                     <li class="list-group-item">
                       <p class="info_card">Edad: 23 años.</p>
                     </li>
@@ -118,11 +134,12 @@
             </div>
           </div>
         </section>
-        <section class="section-class" id="Aptitudes">
-          <div class="box-right">
+        <!-- APTITUDES -->
+        <section class="section-class" >
+          <div class="box-right" id="box-right-1">
             <div class="row d-flex justify-content-start">
-              <div class="col-sm-12 d-md-none d-flex justify-content-start">
-                <h2>Aptitudes</h2>
+              <div class="col-sm-12 d-md-none d-flex box-right-title-wrapper">
+                <h2 class="box-right-title">Aptitudes</h2>
               </div>
               <div class="col-sm-12 col-md-6">
                 <div class="row d-flex justify-content-center">
@@ -156,20 +173,18 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-6 d-sm-none d-md-flex justify-content-start">
-                <h2>Aptitudes</h2>
+              <div class="col-md-6 d-none d-md-flex box-right-title-wrapper">
+                <h2 class="box-right-title">Aptitudes</h2>
               </div>
             </div>
           </div>
         </section>
         <!-- FORMACION -->
-        <section id="Formacion">
-          <div class="box-left">
+        <section >
+          <div class="box-left" id="box-left-2">
             <div class="row">
-              <div
-                class="col-sm-12 col-xl-6 d-flex align-content-center justify-content-center"
-              >
-                <h2>Formación</h2>
+              <div class="col-sm-12 col-xl-6 box-left-title-wrapper">
+                <h2 class="box-left-title">Formación</h2>
               </div>
               <div
                 class="col-sm-12 col-xl-6 d-block align-content-center justify-content-center"
@@ -229,62 +244,147 @@
             </div>
           </div>
         </section>
-        <section class="class-section" id="Tecnologias">
-          <div class="box-right">
+        <!-- TECNOLOGIAS -->
+        <section class="class-section" >
+          <div class="box-right" id="box-right-2">
             <div class="row d-flex">
-              <div class="col-sm-12 col-lg-3 d-flex">
-                <h2>Tecnologias</h2>
+              <div class="col-sm-12 d-md-none d-flex box-right-title-wrapper">
+                <h2 class="box-right-title">Tecnologias</h2>
               </div>
-              <div class="col-sm-12 col-lg-9 d-flex justify-content-around">
-                <div class="col-sm-12 col-lg-3 info-card ">
-                  <div>
-                    <img
-                      src="imagenes/SVG/ai_tecno_on.svg"
-                      class=""
-                      alt="..."
-                    />
+              <div class="col-sm-12 col-lg-6">
+                <div class="row d-flex justify-content-around">
+                  <div class="col-sm-12 col-lg-4 info-card">
+                    <div>
+                      <img
+                        src="imagenes/SVG/ai_tecno_on.svg"
+                        class=""
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-lg-4 info-card">
+                    <div class="">
+                      <img
+                        src="imagenes/SVG/hs_ph_c_tecno_on.svg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-lg-4 info-card">
+                    <div class="">
+                      <img
+                        src="imagenes/SVG/js_css_html_tecno_on.svg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                    </div>
                   </div>
                 </div>
-                <div class="col-sm-12 col-lg-3 info-card">
-                  <div class="">
-                    <img
-                      src="imagenes/SVG/hs_ph_c_tecno_on.svg"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                  </div>
-                </div>
-                <div class="col-sm-12 col-lg-3 info-card">
-                  <div class="">
-                    <img
-                      src="imagenes/SVG/js_css_html_tecno_on.svg"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                  </div>
-                </div>
+              </div>
+              <div class="col-md-6 d-none d-md-flex box-right-title-wrapper">
+                <h2 class="box-right-title">Tecnologias</h2>
               </div>
             </div>
           </div>
         </section>
-        <footer>
-          <div class="row">
-            <div class="col">
-              <img src="" alt="" />
+        <footer id="footer">
+          <div class="container-fluid">
+            <div class="contact-form">
+              <form action="accion">
+                <label class="title-contact-form" for="email"
+                  >Contactame</label
+                >
+                <br />
+                <input
+                  class="field-email-form"
+                  type="email"
+                  name="email"
+                  id="email"
+                  
+                  placeholder="Escribe tu e-Mail aca ..."
+                  required
+                />
+                <br />
+
+                <label class="title-contact-form" or="message">Mensaje:</label>
+                <br />
+
+                <textarea
+                  class="field-message-form"
+                  placeholder="Escribeme tu mensaje aca..."
+                  name="message"
+                  id="message"
+                  rows="4"
+                  cols="35"
+                  required
+                ></textarea>
+                <br />
+
+
+                <button class="button-submit" type="submit">Enviar</button>
+              </form>
             </div>
-            <div class="col">
-              <div class="row"></div>
-              <div class="row"></div>
+            <div class="row footer-contact-icons-container">
+              <div
+                class="col-sm-12 col-lg-4 d-flex justify-content-center align-content-center"
+              >
+                <a class="d-flex align-content-center" href="">
+                  <img
+                    class="footer-contact-icons img-fluid"
+                    src="imagenes/SVG/linkedin.svg"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
+                <a class="d-flex align-content-center" href="">
+                  <img
+                    class="footer-contact-icons img-fluid"
+                    src="imagenes/SVG/bitbucket.svg"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div
+                class="col-sm-12 col-lg-4 d-flex justify-content-center align-content-center"
+              >
+                <a class="d-flex align-content-center" href="">
+                  <img
+                    class="footer-contact-icons img-fluid"
+                    src="imagenes/SVG/github.svg"
+                    alt=""
+                  />
+                </a>
+              </div>
             </div>
-            <div class="col"></div>
+
+            <div class="footer-derechos-container">
+              <div class="col-12 d-flex justify-content-center">
+                <a href="">
+                  <img
+                    class="footer-derechos-icon-jere"
+                    src="imagenes/SVG/jb-logo.svg"
+                    alt="jerebaez - logo - curriculum - jeremias - baez"
+                  />
+                </a>
+              </div>
+              <div class="col-12 d-flex justify-content-center">
+                <p class="footer-derechos-text">
+                  Copyright 2006 por Línea de Código
+                </p>
+              </div>
+            </div>
           </div>
         </footer>
       </div>
       <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
       ></script>
+      <script src="/js/animation.js"></script>
+      <script src="/js/function.js"></script>
     </div>
   </body>
 </html>
