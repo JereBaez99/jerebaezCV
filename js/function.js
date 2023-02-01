@@ -28,7 +28,7 @@ const cargarBox = (entradas, observador) => {
 const observador = new IntersectionObserver(cargarBox, {
   root: null,
   rootMargin: "0px 0px 0px 0px",
-  threshold: 1,
+  threshold: 0.5,
 });
 
 observador.observe(box_left_1);
