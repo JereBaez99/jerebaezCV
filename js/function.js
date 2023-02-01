@@ -31,6 +31,11 @@ const observador = new IntersectionObserver(cargarBox, {
   threshold: 0.5,
 });
 
+
+
+
+
+
 observador.observe(box_left_1);
 observador.observe(box_left_2);
 observador.observe(box_right_1);
