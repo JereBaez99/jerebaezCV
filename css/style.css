@@ -151,7 +151,7 @@ h2 {
 }
 
 .back_ground_main_profile {
-  background-image: url(/imagenes/SVG/back_ground_main_profile.svg);
+  background-image: url(./imagenes/SVG/back_ground_main_profile.svg);
   background-color: white;
   background-size: 60%;
   background-position: center;
