@@ -4,12 +4,12 @@
   padding: 0px;
   border: 0px;
   margin: 0px;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   /* para debugear algunos errores de over-scroll  */
 }
 
 .container-body {
-  outline: 1px solid blueviolet;
+  /* outline: 1px solid blueviolet; */
 }
 .wrapper {
   background-color: black;
