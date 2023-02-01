@@ -4,7 +4,7 @@
   padding: 0px;
   border: 0px;
   margin: 0px;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   /* para debugear algunos errores de over-scroll  */
 }
 
@@ -18,7 +18,7 @@ h2 {
 }
 .wrapper {
   background-color: black;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 .main-title-header {
   font-family: "Bebas Neue", cursive;
@@ -28,7 +28,7 @@ h2 {
 }
 
 .header-class {
-  border: 5px solid red;
+  /* border: 5px solid red; */
   width: 100%;
 }
 .header-img-container {
