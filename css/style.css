@@ -16,6 +16,17 @@ h2 {
   background-color: black;
   /* outline: 1px solid red; */
 }
+
+.button-navabar{
+  border:none;
+  background-color: transparent;
+  transform: scale(1);
+}
+
+.button-navabar:active {
+  transform:scale(1.2);
+}
+
 .main-title-header {
   font-family: "Bebas Neue", cursive;
   font-size: 100px;
@@ -53,7 +64,6 @@ h2 {
 
 .profile-animation-list-container {
   text-align: start;
-  margin: 0% 20%;
   display: flex;
   justify-content: start;
   overflow: hidden;
@@ -110,10 +120,10 @@ h2 {
   border-width: 5px;
   margin: 5px;
   transform: scale(0.9);
-  animation: jump 0.7 cubic-bezier(0.65, 0, 0.35, 1) 0s infinite normal none;
+  /* animation: jump 0.7 cubic-bezier(0.65, 0, 0.35, 1) 0s infinite normal none; */
 }
 
-.brick:hover {
+.brick:active {
   transform: none;
   /* animation: none; */
 }
@@ -228,15 +238,33 @@ h2 {
 
 /* offset de la tarjeta con informacion personal */
 
+
+.progress-bar-color {
+  background-color: rgb(28, 117, 188);
+}
+
+.card-img-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.card-img-invisible{
+  width: 130px;
+  transform: scale(0);
+  transition: 0.7s cubic-bezier(0.19, 1, 0.22, 1) 0.7s ;
+}
+
+.card-img-visible{
+  transform:scale(1) ;
+}
+
 footer {
   justify-content: center;
   background-color: rgb(28, 117, 188);
   padding: 0%;
   display: block;
-}
-
-.progress-bar-color {
-  background-color: rgb(28, 117, 188);
 }
 
 .contact-form {
@@ -290,6 +318,11 @@ footer {
   padding: 10px;
   width: 100%;
   height: auto;
+  transform: scale(1);
+}
+
+.footer-contact-icons:hover {
+  transform: scale(1.2);
 }
 
 .footer-derechos-container {
@@ -383,4 +416,10 @@ footer {
     font-size: large;
     margin: auto;
   }
+
+  .button-navabar{
+    display: none;
+  }
+
+  
 }

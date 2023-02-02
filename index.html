@@ -49,7 +49,8 @@
       <nav class="navbar sticky-top navbar-light bg-light navbar-expand-lg">
         <div class="container-fluid">
           <button
-            class="navbar-toggler"
+            data-bs-dismiss="offcanvas"
+            class="button-navabar"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbar_icon"
@@ -94,7 +95,7 @@
         </div>
       </nav>
       <!-- ENCABEZADO -->
-      <div id="wrapper">
+      <div class="wrapper">
         <header>
           <div class="container-fluid header-class">
             <div class="row back_ground_main_profile">
@@ -105,9 +106,7 @@
                 <div class="profile-animation-list-container">
                   <ul class="profile-animation-list" id="profile_animation">
                     <li>
-                      <h3 class="profile-animation-item">
-                        Front end Developer
-                      </h3>
+                      <h3 class="profile-animation-item">Frontend Developer</h3>
                     </li>
                     <li>
                       <h3 class="profile-animation-item">Designer</h3>
@@ -275,30 +274,33 @@
                 <h2 class="box-right-title">Tecnologias</h2>
               </div>
               <div class="col-sm-12 col-lg-6">
-                <div class="row d-flex justify-content-around">
+                <div class="row">
                   <div class="col-sm-12 col-lg-4 info-card">
-                    <div>
+                    <div class="card-img-wrapper">
                       <img
+                        id="card-img-1"
                         src="imagenes/SVG/ai_tecno_on.svg"
-                        class=""
+                        class="card-img-invisible"
                         alt="..."
                       />
                     </div>
                   </div>
                   <div class="col-sm-12 col-lg-4 info-card">
-                    <div class="">
+                    <div class="card-img-wrapper">
                       <img
+                        id="card-img-2"
                         src="imagenes/SVG/hs_ph_c_tecno_on.svg"
-                        class="card-img-top"
+                        class="card-img-invisible"
                         alt="..."
                       />
                     </div>
                   </div>
                   <div class="col-sm-12 col-lg-4 info-card">
-                    <div class="">
+                    <div class="card-img-wrapper">
                       <img
+                        id="card-img-3"
                         src="imagenes/SVG/js_css_html_tecno_on.svg"
-                        class="card-img-top"
+                        class="card-img-invisible"
                         alt="..."
                       />
                     </div>
@@ -368,7 +370,10 @@
               <div
                 class="col-sm-12 col-lg-4 d-flex justify-content-center align-content-center"
               >
-                <a class="d-flex align-content-center" href="">
+                <a
+                  class="d-flex align-content-center"
+                  href="https://github.com/JereBaez99"
+                >
                   <img
                     class="footer-contact-icons img-fluid"
                     src="imagenes/SVG/github.svg"
