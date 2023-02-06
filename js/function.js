@@ -54,3 +54,4 @@ observador.observe(box_right_2);
 observador.observe(card_img_1);
 observador.observe(card_img_2);
 observador.observe(card_img_3);
+

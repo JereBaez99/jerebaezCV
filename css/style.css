@@ -17,14 +17,14 @@ h2 {
   /* outline: 1px solid red; */
 }
 
-.button-navabar{
-  border:none;
+.button-navabar {
+  border: none;
   background-color: transparent;
   transform: scale(1);
 }
 
 .button-navabar:active {
-  transform:scale(1.2);
+  transform: scale(1.2);
 }
 
 .main-title-header {
@@ -63,9 +63,7 @@ h2 {
 }
 
 .profile-animation-list-container {
-  text-align: start;
-  display: flex;
-  justify-content: start;
+  display: block;
   overflow: hidden;
   height: 60px;
   width: auto;
@@ -96,36 +94,59 @@ h2 {
 
 /* stilo de los ladrillos con los elementos de las aptitudes */
 
-@keyframes jump {
-  0% {
-    transform: scale(0.9);
-  }
-  50% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0.9);
-  }
+.brick-bg {
+  background-image: url("../imagenes/SVG/jb-logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.brick-wrapper {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.brick-container {
+  padding: 0;
+  margin: 0;
 }
 
 .brick {
+  backface-visibility: hidden;
+  width: 100%;
   font-family: "IBM Plex Mono", monospace;
   background-color: rgb(250, 247, 242);
   justify-content: start;
-  margin: auto;
+  padding: 0;
+  margin: 0px;
   text-align: center;
-  border-radius: 10px;
   border-style: solid;
   border-color: black;
   border-width: 5px;
-  margin: 5px;
-  transform: scale(0.9);
-  /* animation: jump 0.7 cubic-bezier(0.65, 0, 0.35, 1) 0s infinite normal none; */
+  transition-property:transform;
+  transition-duration: 0.3s;
+  transition-timing-function:cubic-bezier(0.755, 0.050, 0.855, 0.060);
+  transition-delay:3s;
+  transform-style: preserve-3d;
 }
 
-.brick:active {
-  transform: none;
-  /* animation: none; */
+.brick-box-inner:is(:hover,:focus) .brick{
+  transform: rotateX(180deg) translateY(-100px);
+  transition-delay: 0s
+}
+
+.brick-box-inner {
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.brick-front,
+.brick-back {
+  width: 100%;
+  height: 100%;
 }
 
 .col-contour {
@@ -157,7 +178,7 @@ h2 {
 }
 
 .back_ground_main_profile {
-  background-image:url("../imagenes/SVG/back_ground_main_profile.svg");
+  background-image: url("../imagenes/SVG/back_ground_main_profile.svg");
   background-color: white;
   background-size: 60%;
   background-position: center;
@@ -205,13 +226,16 @@ h2 {
 }
 
 .box-right-title {
-  align-self: center;
+  padding: 0;
+  margin: 0;
+  text-align: center;
   margin: 0px;
 }
 
 .box-right-title-wrapper {
   display: flex;
   justify-content: center;
+  text-align: center;
   margin: auto;
 }
 
@@ -238,26 +262,25 @@ h2 {
 
 /* offset de la tarjeta con informacion personal */
 
-
 .progress-bar-color {
   background-color: rgb(28, 117, 188);
 }
 
-.card-img-wrapper{
+.card-img-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 5px;
 }
 
-.card-img-invisible{
+.card-img-invisible {
   width: 130px;
   transform: scale(0);
-  transition: 0.7s cubic-bezier(0.19, 1, 0.22, 1) 0.7s ;
+  transition: 0.7s cubic-bezier(0.19, 1, 0.22, 1) 0.7s;
 }
 
-.card-img-visible{
-  transform:scale(1) ;
+.card-img-visible {
+  transform: scale(1);
 }
 
 footer {
@@ -346,7 +369,7 @@ footer {
   margin: 0%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .off-set {
     margin-top: -80px;
   }
@@ -361,8 +384,8 @@ footer {
   }
 
   .box-right-title {
-    align-self: end;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
   }
 
   .box-right-title-wrapper {
@@ -417,9 +440,7 @@ footer {
     margin: auto;
   }
 
-  .button-navabar{
+  .button-navabar {
     display: none;
   }
-
-  
 }
