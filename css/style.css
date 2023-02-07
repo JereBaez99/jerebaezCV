@@ -133,7 +133,7 @@ h2 {
   transform-style: preserve-3d;
 }
 
-.brick-box-inner:is(:hover,:focus,:active) .brick{
+.brick-box-inner:is(:active) .brick{
   transform: rotateX(180deg) translateY(-100px);
   transition-delay: 0s
 }
@@ -445,6 +445,11 @@ footer {
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  .brick-box-inner:hover .brick{
+    transform: rotateX(180deg) translateY(-100px);
+    transition-delay: 0s
   }
 
   .button-navabar {
